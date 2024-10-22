@@ -1,15 +1,15 @@
 import mysql.connector
 from prettytable import PrettyTable #output table format
-#host = input("Enter database host : ")
-#user = input("Enter database user :")
-#password = input("Enter database password: ")
-#database = input("Enter database name: ")
+host = input("Enter database host : ")
+user = input("Enter database user :")
+password = input("Enter database password: ")
+database = input("Enter database name: ")
 
 con=mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Vinokee0506@",
-        database="Vk"
+        host=host,
+        user=user,
+        password=password,
+        database=database
 )
 def check_employee(emp_id):     
         check=con.cursor() 
